@@ -55,9 +55,9 @@ class Crime(models.Model):
     location = gis_models.PointField(geography=True, spatial_index=True)
     block_address = models.CharField(max_length=255, help_text="Generalized address at block level")
     zip_code = models.CharField(max_length=20, blank=True)
-    city = models.CharField(max_length=100)
-    state = models.CharField(max_length=50)
-    country = models.CharField(max_length=50, default="United States")
+    city = models.CharField(max_length=100, db_index=True)
+    state = models.CharField(max_length=50, db_index=True)
+    country = models.CharField(max_length=50, default="Kenya")
     
     # Verification status
     VERIFICATION_STATUS = (
