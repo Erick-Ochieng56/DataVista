@@ -10,9 +10,9 @@ class Agency(models.Model):
     agency_code = models.CharField(max_length=50, unique=True)
     agency_type = models.CharField(max_length=100, choices=[
         ('police', 'Police Department'),
-        ('sheriff', 'Sheriff\'s Office'),
-        ('state', 'State Law Enforcement'),
-        ('federal', 'Federal Agency'),
+        ('dci', 'Directorate of Criminal Investigations (DCI)'),
+        ('nps', 'National Police Service (NPS)'),
+        ('ipoa', 'Independent Policing Oversight Authority (IPOA)'),
         ('other', 'Other')
     ])
     
