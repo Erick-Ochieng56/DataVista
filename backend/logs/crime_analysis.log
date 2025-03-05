@@ -58,3 +58,28 @@ INFO 2025-03-05 13:23:16,192 autoreload Watching for file changes with StatReloa
 INFO 2025-03-05 13:23:40,430 autoreload Watching for file changes with StatReloader
 INFO 2025-03-05 14:01:36,758 autoreload Watching for file changes with StatReloader
 INFO 2025-03-05 21:20:10,248 autoreload Watching for file changes with StatReloader
+INFO 2025-03-05 22:06:11,959 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-05 22:06:29,568 log Not Found: /
+WARNING 2025-03-05 22:06:29,639 basehttp "GET / HTTP/1.1" 404 2654
+WARNING 2025-03-05 22:06:29,889 log Not Found: /favicon.ico
+WARNING 2025-03-05 22:06:29,892 basehttp "GET /favicon.ico HTTP/1.1" 404 2705
+INFO 2025-03-05 22:06:37,720 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2025-03-05 22:06:37,909 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-05 22:06:38,254 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-03-05 22:06:38,715 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-03-05 22:06:38,840 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-03-05 22:06:38,868 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-03-05 22:06:38,890 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-03-05 22:06:38,891 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-03-05 22:06:38,908 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-03-05 22:06:38,992 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2025-03-05 22:06:46,531 log Not Found: /
+WARNING 2025-03-05 22:06:46,534 basehttp "GET / HTTP/1.1" 404 2654
+WARNING 2025-03-05 22:06:55,557 log Not Found: /api/
+WARNING 2025-03-05 22:06:55,561 basehttp "GET /api/ HTTP/1.1" 404 2684
+WARNING 2025-03-05 22:07:03,384 log Not Found: /api/v1/
+WARNING 2025-03-05 22:07:03,386 basehttp "GET /api/v1/ HTTP/1.1" 404 5100
+WARNING 2025-03-05 22:07:12,265 log Not Found: /swagger/
+WARNING 2025-03-05 22:07:12,267 basehttp "GET /swagger/ HTTP/1.1" 404 2696
+INFO 2025-03-05 22:07:55,486 autoreload C:\Users\Administrator\Desktop\crime_stat\backend\crime_analysis\urls.py changed, reloading.
+INFO 2025-03-05 22:07:59,603 autoreload Watching for file changes with StatReloader

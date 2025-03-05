@@ -97,8 +97,14 @@ class Migration(migrations.Migration):
             model_name='crime',
             index=models.Index(fields=['city'], name='crimes_crim_city_251979_idx'),
         ),
+        # Simple solution - replace GIN index with btree
         migrations.AddIndex(
             model_name='crime',
-            index=django.contrib.postgres.indexes.GinIndex(fields=['block_address'], name='crimes_crim_block_a_653b82_gin'),
+            index=models.Index(fields=['block_address'], name='crimes_crim_block_a_653b82_idx'),
+        ),
+        # Enable pg_trgm extension for text search capabilities
+        migrations.RunSQL(
+            "CREATE EXTENSION IF NOT EXISTS pg_trgm;",
+            "DROP EXTENSION IF EXISTS pg_trgm;"
         ),
     ]
