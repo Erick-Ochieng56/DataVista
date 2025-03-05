@@ -3,6 +3,7 @@ from django.contrib.gis.db import models as gis_models
 from django.contrib.gis.geos import Point
 from django.contrib.auth import get_user_model
 from crimes.models import CrimeType
+from leaflet.forms.widgets import LeafletWidget
 
 User = get_user_model()
 

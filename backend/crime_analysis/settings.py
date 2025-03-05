@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
     'celery',    # For async tasks
+    'leaflet',
 
        # Custom apps
     'accounts',
@@ -312,3 +313,15 @@ if os.name == 'nt':  # For Windows
         os.environ['GDAL_DATA'] = OSGEO4W + r"\share\gdal"
         os.environ['PROJ_LIB'] = OSGEO4W + r"\share\proj"
         os.environ['PATH'] = OSGEO4W + r"\bin;" + os.environ['PATH']
+
+
+
+# GIS settings
+LEAFLET_CONFIG = {
+    'DEFAULT_CENTER': (0, 0),
+    'DEFAULT_ZOOM': 3,
+    'TILES': [('OpenStreetMap', 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        'attribution': '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    })],
+}
+

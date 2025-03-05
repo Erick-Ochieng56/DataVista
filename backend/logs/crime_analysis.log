@@ -109,3 +109,227 @@ WARNING 2025-03-05 22:09:14,927 log Unauthorized: /api/v1/accounts/
 WARNING 2025-03-05 22:09:14,929 basehttp "GET /api/v1/accounts/ HTTP/1.1" 401 5069
 WARNING 2025-03-05 22:09:17,635 log Unauthorized: /api/v1/accounts/
 WARNING 2025-03-05 22:09:17,636 basehttp "GET /api/v1/accounts/?format=json HTTP/1.1" 401 58
+WARNING 2025-03-05 23:15:06,015 log Unauthorized: /api/v1/accounts/
+WARNING 2025-03-05 23:15:06,037 basehttp "GET /api/v1/accounts/?format=json HTTP/1.1" 401 58
+INFO 2025-03-05 23:15:15,110 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-05 23:15:15,230 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-03-05 23:15:31,200 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-03-05 23:15:31,482 basehttp "GET /admin/ HTTP/1.1" 200 21691
+INFO 2025-03-05 23:15:31,532 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-03-05 23:15:31,581 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-03-05 23:15:31,582 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-03-05 23:15:42,044 basehttp "GET /admin/etl/datasource/add/ HTTP/1.1" 200 27356
+INFO 2025-03-05 23:15:42,137 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+INFO 2025-03-05 23:15:42,325 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-03-05 23:15:42,326 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-03-05 23:15:42,347 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-03-05 23:15:42,451 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2025-03-05 23:15:42,460 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-03-05 23:15:42,535 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-03-05 23:15:42,587 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-03-05 23:15:42,603 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-03-05 23:15:42,609 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-03-05 23:15:42,717 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-05 23:15:42,817 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-03-05 23:15:42,863 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-03-05 23:15:42,942 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-03-05 23:30:34,449 basehttp "GET /admin/agencies/agencyapiconfig/ HTTP/1.1" 200 21059
+INFO 2025-03-05 23:30:34,539 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-03-05 23:30:34,696 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-03-05 23:30:35,145 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-05 23:30:35,356 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-03-05 23:30:35,436 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-03-05 23:30:38,932 basehttp "GET /admin/agencies/agencyapiconfig/add/ HTTP/1.1" 200 27716
+INFO 2025-03-05 23:30:39,410 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-05 23:30:56,224 basehttp "GET /admin/agencies/agency/ HTTP/1.1" 200 21507
+INFO 2025-03-05 23:30:56,498 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-05 23:31:01,809 basehttp "GET /admin/accounts/loginhistory/add/ HTTP/1.1" 200 24153
+INFO 2025-03-05 23:31:01,968 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-03-05 23:31:02,356 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-05 23:31:08,532 basehttp "GET /admin/accounts/userprofile/ HTTP/1.1" 200 19900
+INFO 2025-03-05 23:31:09,301 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-05 23:31:12,407 basehttp "GET /admin/accounts/userprofile/add/ HTTP/1.1" 200 26107
+INFO 2025-03-05 23:31:13,055 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-05 23:33:37,407 basehttp "GET /admin/accounts/userprofile/add/ HTTP/1.1" 200 26107
+INFO 2025-03-05 23:53:49,022 basehttp "GET /admin/accounts/userprofile/add/ HTTP/1.1" 200 26107
+ERROR 2025-03-05 23:53:59,244 log Internal Server Error: /admin/alerts/alert/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: gis/openlayers-osm.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 1073, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\base.py", line 1050, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\forms\utils.py", line 79, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\forms\boundfield.py", line 108, in as_widget
+    return widget.render(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\forms\widgets.py", line 279, in render
+    return self._render(self.template_name, context, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\forms\widgets.py", line 284, in _render
+    return mark_safe(renderer.render(template_name, context))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\forms\renderers.py", line 28, in render
+    template = self.get_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\forms\renderers.py", line 34, in get_template
+    return self.engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\backends\django.py", line 81, in get_template
+    reraise(exc, self)
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: gis/openlayers-osm.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Administrator\Desktop\crime_stat\backend\venv\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: gis/openlayers-osm.html
+ERROR 2025-03-05 23:53:59,392 basehttp "GET /admin/alerts/alert/add/ HTTP/1.1" 500 633174
+INFO 2025-03-05 23:56:23,978 basehttp "GET /admin/accounts/userprofile/add/ HTTP/1.1" 200 26107
+INFO 2025-03-06 00:00:57,988 autoreload C:\Users\Administrator\Desktop\crime_stat\backend\crime_analysis\settings.py changed, reloading.
+INFO 2025-03-06 00:01:04,676 autoreload Watching for file changes with StatReloader
+INFO 2025-03-06 00:02:00,787 autoreload C:\Users\Administrator\Desktop\crime_stat\backend\crime_analysis\settings.py changed, reloading.
+INFO 2025-03-06 00:02:05,437 autoreload Watching for file changes with StatReloader
+INFO 2025-03-06 00:03:45,525 autoreload C:\Users\Administrator\Desktop\crime_stat\backend\alerts\models.py changed, reloading.
+INFO 2025-03-06 00:03:51,019 autoreload Watching for file changes with StatReloader
