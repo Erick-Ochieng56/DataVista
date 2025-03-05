@@ -83,3 +83,29 @@ WARNING 2025-03-05 22:07:12,265 log Not Found: /swagger/
 WARNING 2025-03-05 22:07:12,267 basehttp "GET /swagger/ HTTP/1.1" 404 2696
 INFO 2025-03-05 22:07:55,486 autoreload C:\Users\Administrator\Desktop\crime_stat\backend\crime_analysis\urls.py changed, reloading.
 INFO 2025-03-05 22:07:59,603 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-05 22:08:30,821 log Not Found: /swagger/
+WARNING 2025-03-05 22:08:30,824 basehttp "GET /swagger/ HTTP/1.1" 404 2696
+WARNING 2025-03-05 22:08:32,077 log Not Found: /swagger/
+WARNING 2025-03-05 22:08:32,078 basehttp "GET /swagger/ HTTP/1.1" 404 2696
+WARNING 2025-03-05 22:08:42,953 log Not Found: /api/
+WARNING 2025-03-05 22:08:42,955 basehttp "GET /api/ HTTP/1.1" 404 2684
+WARNING 2025-03-05 22:08:48,982 log Not Found: /api/v1/
+WARNING 2025-03-05 22:08:48,986 basehttp "GET /api/v1/ HTTP/1.1" 404 5100
+WARNING 2025-03-05 22:09:02,668 log Unauthorized: /api/v1/accounts/
+WARNING 2025-03-05 22:09:02,670 basehttp "GET /api/v1/accounts/ HTTP/1.1" 401 5069
+INFO 2025-03-05 22:09:03,169 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-03-05 22:09:03,205 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-03-05 22:09:03,260 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-03-05 22:09:03,270 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-03-05 22:09:03,428 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-03-05 22:09:03,495 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-03-05 22:09:03,521 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-03-05 22:09:03,527 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-03-05 22:09:03,560 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-03-05 22:09:03,567 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-03-05 22:09:03,642 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-03-05 22:09:03,732 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+WARNING 2025-03-05 22:09:14,927 log Unauthorized: /api/v1/accounts/
+WARNING 2025-03-05 22:09:14,929 basehttp "GET /api/v1/accounts/ HTTP/1.1" 401 5069
+WARNING 2025-03-05 22:09:17,635 log Unauthorized: /api/v1/accounts/
+WARNING 2025-03-05 22:09:17,636 basehttp "GET /api/v1/accounts/?format=json HTTP/1.1" 401 58
