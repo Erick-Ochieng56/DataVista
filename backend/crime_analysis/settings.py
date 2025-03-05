@@ -10,15 +10,19 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os
-
+from dotenv import load_dotenv
 from datetime import timedelta
 from pathlib import Path
+
+
+# Load environment variables
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -26,7 +30,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
+
+
 
 
 # Application definition
@@ -107,8 +113,20 @@ DATABASES = {
 # Custom user model
 AUTH_USER_MODEL = 'accounts.User'
 
+# Retrieve library paths
+GDAL_LIBRARY_PATH = os.getenv('GDAL_LIBRARY_PATH')
+GEOS_LIBRARY_PATH = os.getenv('GEOS_LIBRARY_PATH')
 
+# Error checking with more informative error message
+if not GDAL_LIBRARY_PATH or not GEOS_LIBRARY_PATH:
+    raise ValueError(
+        "GDAL or GEOS library paths are missing in the .env file. "
+        "Please ensure GDAL_LIBRARY_PATH and GEOS_LIBRARY_PATH are correctly set."
+    )
 
+# Optional: Add additional logging or print statement for debugging
+print(f"GDAL Library Path: {GDAL_LIBRARY_PATH}")
+print(f"GEOS Library Path: {GEOS_LIBRARY_PATH}")
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

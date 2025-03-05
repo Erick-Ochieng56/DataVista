@@ -1,9 +1,9 @@
 from django.contrib import admin
-from django.contrib.gis.admin import GeoModelAdmin
+from django.contrib.gis.admin import GISModelAdmin
 from .models import Agency, AgencyAPIConfig, AgencyUser
 
 @admin.register(Agency)
-class AgencyAdmin(GeoModelAdmin):
+class AgencyAdmin(GISModelAdmin):
     """
     Admin configuration for Agency model
     """

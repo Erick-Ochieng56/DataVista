@@ -88,7 +88,7 @@ class Crime(models.Model):
             models.Index(fields=['verification_status']),
             models.Index(fields=['zip_code']),
             models.Index(fields=['city']),
-            GinIndex(fields=['block_address']),  # For faster text search
+             GinIndex(fields=['block_address'], opclasses=['gin_trgm_ops'],name='block_address_gin_idx'),  # Fix
         ]
         ordering = ['-occurred_at']
 

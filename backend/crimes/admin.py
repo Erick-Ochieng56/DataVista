@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.contrib.gis.admin import OSMGeoAdmin
+from django.contrib.gis.admin import GISModelAdmin
 from .models import CrimeCategory, CrimeType, Crime, CrimeAttribute
 
 @admin.register(CrimeCategory)
@@ -16,7 +16,7 @@ class CrimeTypeAdmin(admin.ModelAdmin):
     search_fields = ['name', 'description']
 
 @admin.register(Crime)
-class CrimeAdmin(OSMGeoAdmin):
+class CrimeAdmin(GISModelAdmin):
     """Admin configuration for Crime Incidents"""
     list_display = [
         'incident_id', 

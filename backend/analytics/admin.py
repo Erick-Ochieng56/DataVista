@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.contrib.gis.admin import OSMGeoAdmin
+from django.contrib.gis.admin import GISModelAdmin
 from .models import PredictiveModel, Prediction, AnalysisRequest
 
 @admin.register(PredictiveModel)
@@ -35,7 +35,7 @@ class PredictiveModelAdmin(admin.ModelAdmin):
         return self.readonly_fields
 
 @admin.register(Prediction)
-class PredictionAdmin(OSMGeoAdmin):
+class PredictionAdmin(GISModelAdmin):
     list_display = (
         'model', 
         'prediction_start_date', 
@@ -60,7 +60,7 @@ class PredictionAdmin(OSMGeoAdmin):
     )
 
 @admin.register(AnalysisRequest)
-class AnalysisRequestAdmin(OSMGeoAdmin):
+class AnalysisRequestAdmin(GISModelAdmin):
     list_display = (
         'title', 
         'user', 

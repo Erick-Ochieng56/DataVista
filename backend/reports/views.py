@@ -3,7 +3,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from django.utils import timezone
 
-from backend.accounts import models
+from accounts import models
 
 from .models import Report, ReportTemplate, ScheduledReport
 from .serializers import (

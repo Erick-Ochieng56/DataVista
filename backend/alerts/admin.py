@@ -1,9 +1,9 @@
 from django.contrib import admin
-from django.contrib.gis.admin import GeoModelAdmin
+from django.contrib.gis.admin import GISModelAdmin
 from .models import Alert, AlertNotification
 
 @admin.register(Alert)
-class AlertAdmin(GeoModelAdmin):
+class AlertAdmin(GISModelAdmin):
     """Admin configuration for Alert model"""
     list_display = ('name', 'user', 'is_active', 'notification_method', 'check_frequency')
     list_filter = ('is_active', 'crime_types', 'notification_method', 'check_frequency')
