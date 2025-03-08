@@ -13,6 +13,7 @@ class CrimeTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = CrimeType
         fields = ['id', 'name', 'description', 'category', 'category_name', 'severity_level']
+        ref_name = 'CrimesCrimeTypeSerializer'
 
 class CrimeTypeDetailSerializer(serializers.ModelSerializer):
     category = CrimeCategorySerializer(read_only=True)

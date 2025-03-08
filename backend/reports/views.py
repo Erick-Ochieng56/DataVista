@@ -2,7 +2,7 @@ from rest_framework import viewsets, permissions, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from django.utils import timezone
-
+from django.db.models import Q
 from accounts import models
 
 from .models import Report, ReportTemplate, ScheduledReport
@@ -43,7 +43,7 @@ class ReportTemplateViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         # Users can see public templates or their own templates
         return ReportTemplate.objects.filter(
-            models.Q(is_public=True) | models.Q(owner=self.request.user)
+            Q(is_public=True) | Q(owner=self.request.user)
         )
     
     @action(detail=False, methods=['GET'])

@@ -19,6 +19,7 @@ class UserSerializer(serializers.ModelSerializer):
                   'phone_number', 'user_type', 'is_email_verified', 
                   'theme_preference', 'profile']
         read_only_fields = ['id', 'is_email_verified']
+        ref_name = 'AccountsUserSerializer'
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
     """Serializer for user registration with password validation"""

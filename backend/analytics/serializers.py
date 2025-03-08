@@ -7,6 +7,7 @@ class CrimeTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = CrimeType
         fields = ['id', 'name']
+        ref_name = 'AnalyticsCrimeTypeSerializer'
 
 class PredictiveModelSerializer(serializers.ModelSerializer):
     target_crime_types = CrimeTypeSerializer(many=True, read_only=True)
