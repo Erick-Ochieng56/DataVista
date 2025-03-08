@@ -27,7 +27,7 @@ class UserViewSet(viewsets.ModelViewSet):
         """
         Return appropriate serializer based on action
         """
-        if self.action == 'create':
+        if self.action == 'create' or self.action == 'register':
             return UserRegistrationSerializer
         return UserSerializer
 
@@ -40,20 +40,20 @@ class UserViewSet(viewsets.ModelViewSet):
         if serializer.is_valid():
             user = serializer.save()
             
-            # Create associated UserProfile
-            UserProfile.objects.create(user=user)
-            
             # Optional: Send verification email
             verification_token = get_random_string(length=32)
             user.verification_token = verification_token
             user.save()
             
             # Uncomment and configure email verification logic
-            # self._send_verification_email(user)
+            self._send_verification_email(user)
+            
+            # Return user data along with success message
+            user_data = UserSerializer(user).data
             
             return Response({
                 'message': 'User registered successfully', 
-                'user_id': user.id
+                'user': user_data
             }, status=status.HTTP_201_CREATED)
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
@@ -80,20 +80,29 @@ class UserViewSet(viewsets.ModelViewSet):
                 was_successful=True
             )
             
+            # Return user data along with success message
+            user_data = UserSerializer(user).data
+            
             return Response({
                 'message': 'Login successful',
-                'user_id': user.id
+                'user': user_data
             })
         else:
-            # Log failed login attempt
-            LoginHistory.objects.create(
-                user=User.objects.filter(username=username).first(),
-                ip_address=self._get_client_ip(request),
-                user_agent=request.META.get('HTTP_USER_AGENT', ''),
-                device_type=self._get_device_type(request),
-                was_successful=False,
-                failure_reason='Invalid credentials'
-            )
+            # Try to find user to log failed attempt
+            try:
+                user_obj = User.objects.get(username=username)
+                # Log failed login attempt
+                LoginHistory.objects.create(
+                    user=user_obj,
+                    ip_address=self._get_client_ip(request),
+                    user_agent=request.META.get('HTTP_USER_AGENT', ''),
+                    device_type=self._get_device_type(request),
+                    was_successful=False,
+                    failure_reason='Invalid credentials'
+                )
+            except User.DoesNotExist:
+                # User doesn't exist, just pass
+                pass
             
             return Response({
                 'message': 'Invalid credentials'

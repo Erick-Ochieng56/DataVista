@@ -1035,3 +1035,26 @@ Traceback (most recent call last):
 drf_yasg.errors.SwaggerGenerationError: Schema for <class 'accounts.serializers.UserSerializer'> would override distinct serializer <class 'reports.serializers.UserSerializer'> because they implicitly share the same ref_name; explicitly set the ref_name attribute on both serializers' Meta classes
 ERROR 2025-03-08 11:41:50,210 basehttp "GET /api/v1/swagger/?format=openapi HTTP/1.1" 500 257273
 INFO 2025-03-08 11:45:39,047 autoreload Watching for file changes with StatReloader
+INFO 2025-03-08 11:45:44,353 basehttp "GET /api/v1/swagger/ HTTP/1.1" 200 1641
+INFO 2025-03-08 11:45:45,697 basehttp "GET /api/v1/swagger/?format=openapi HTTP/1.1" 200 98063
+WARNING 2025-03-08 11:46:13,359 log Bad Request: /api/v1/agencies/agencies/
+WARNING 2025-03-08 11:46:13,361 basehttp "POST /api/v1/agencies/agencies/ HTTP/1.1" 400 113
+WARNING 2025-03-08 11:50:55,487 log Bad Request: /api/v1/accounts/auth/register/
+WARNING 2025-03-08 11:50:55,489 basehttp "POST /api/v1/accounts/auth/register/ HTTP/1.1" 400 87
+WARNING 2025-03-08 11:53:42,255 log Bad Request: /api/v1/accounts/auth/register/
+WARNING 2025-03-08 11:53:42,256 basehttp "POST /api/v1/accounts/auth/register/ HTTP/1.1" 400 87
+INFO 2025-03-08 12:03:10,943 autoreload C:\Users\Administrator\Desktop\crime_stat\backend\accounts\serializers.py changed, reloading.
+INFO 2025-03-08 12:03:14,820 autoreload Watching for file changes with StatReloader
+INFO 2025-03-08 12:04:12,248 autoreload C:\Users\Administrator\Desktop\crime_stat\backend\accounts\views.py changed, reloading.
+INFO 2025-03-08 12:04:17,029 autoreload Watching for file changes with StatReloader
+INFO 2025-03-08 12:04:22,193 autoreload C:\Users\Administrator\Desktop\crime_stat\backend\accounts\views.py changed, reloading.
+INFO 2025-03-08 12:04:24,936 autoreload Watching for file changes with StatReloader
+INFO 2025-03-08 12:04:46,682 basehttp "GET /api/v1/swagger/ HTTP/1.1" 200 1641
+INFO 2025-03-08 12:04:48,294 basehttp "GET /api/v1/swagger/?format=openapi HTTP/1.1" 200 97925
+WARNING 2025-03-08 12:05:37,475 log Bad Request: /api/v1/accounts/users/register/
+WARNING 2025-03-08 12:05:37,480 basehttp "POST /api/v1/accounts/users/register/ HTTP/1.1" 400 83
+INFO 2025-03-08 12:07:33,562 basehttp "POST /api/v1/accounts/users/register/ HTTP/1.1" 201 475
+WARNING 2025-03-08 12:08:49,209 log Bad Request: /api/v1/accounts/auth/register/
+WARNING 2025-03-08 12:08:49,211 basehttp "POST /api/v1/accounts/auth/register/ HTTP/1.1" 400 83
+INFO 2025-03-08 12:11:30,317 autoreload C:\Users\Administrator\Desktop\crime_stat\backend\accounts\views.py changed, reloading.
+INFO 2025-03-08 12:11:35,802 autoreload Watching for file changes with StatReloader
