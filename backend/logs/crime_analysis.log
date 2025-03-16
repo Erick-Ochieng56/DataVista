@@ -1763,3 +1763,59 @@ INFO 2025-03-10 14:44:50,757 basehttp "GET /static/admin/img/icon-calendar.svg H
 INFO 2025-03-10 14:45:38,823 basehttp "GET /admin/analytics/analysisrequest/add/ HTTP/1.1" 200 30655
 INFO 2025-03-10 14:45:39,173 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-03-11 18:02:50,825 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 18:04:32,461 log Not Found: /
+WARNING 2025-03-11 18:04:32,576 basehttp "GET / HTTP/1.1" 404 2654
+WARNING 2025-03-11 18:04:33,683 log Not Found: /
+WARNING 2025-03-11 18:04:33,684 basehttp "GET / HTTP/1.1" 404 2654
+WARNING 2025-03-11 18:05:11,759 log Not Found: /
+WARNING 2025-03-11 18:05:11,762 basehttp "GET / HTTP/1.1" 404 2654
+WARNING 2025-03-11 18:05:12,153 log Not Found: /
+WARNING 2025-03-11 18:05:12,155 basehttp "GET / HTTP/1.1" 404 2654
+INFO 2025-03-11 18:05:28,009 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-11 18:05:28,554 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-03-11 18:05:31,073 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-03-11 18:05:39,048 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4321
+INFO 2025-03-11 18:05:40,394 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-03-11 18:05:49,038 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4319
+INFO 2025-03-11 18:05:50,372 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-03-11 18:05:57,429 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-03-11 18:05:57,746 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-03-11 18:05:57,778 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-03-11 18:05:57,779 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:05:57,813 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:05:57,822 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-03-11 18:05:57,880 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+WARNING 2025-03-11 18:05:58,169 log Not Found: /favicon.ico
+WARNING 2025-03-11 18:05:58,171 basehttp "GET /favicon.ico HTTP/1.1" 404 2705
+INFO 2025-03-11 18:06:04,462 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-03-11 18:06:04,865 basehttp "GET /admin/ HTTP/1.1" 200 22449
+INFO 2025-03-11 18:06:04,934 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:04,957 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:04,957 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:20,349 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-03-11 18:06:20,724 basehttp "GET /admin/ HTTP/1.1" 200 22449
+INFO 2025-03-11 18:06:29,844 basehttp "GET /api/v1/swagger/ HTTP/1.1" 200 1641
+INFO 2025-03-11 18:06:30,876 basehttp "GET /api/v1/swagger/?format=openapi HTTP/1.1" 200 97925
+INFO 2025-03-11 18:06:51,559 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 20368
+INFO 2025-03-11 18:06:51,638 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:51,660 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:51,664 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:51,672 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:51,672 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:51,750 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:51,810 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:51,874 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:51,923 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:52,071 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:52,075 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:52,118 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:52,119 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:56,329 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 24992
+INFO 2025-03-11 18:06:56,385 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:56,386 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-03-11 18:06:56,565 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 18:06:56,630 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-03-11 18:07:31,883 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 20368
+INFO 2025-03-11 18:40:37,972 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 24992
+INFO 2025-03-11 18:40:39,072 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 20368
+INFO 2025-03-16 01:22:20,952 autoreload Watching for file changes with StatReloader
